@@ -1,5 +1,5 @@
 {
-  "name": "PyChemicals",
+  "name": "pychemicals",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,11 +7,17 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "pnpm build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.32.2",
     "astro": "^5.1.5",
     "sharp": "^0.32.5"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "homepage": "https://Shoaib-Programmer.github.io/PyChemicals"
 }
